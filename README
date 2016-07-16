@@ -5,8 +5,22 @@ Once I've read [this tweet](https://twitter.com/steveluscher/status/741089564329
 from @steveluscher I could not help my self not to write this repo 😈 obviously
 with his own tests 😂
 
+It's something like:
+
+```js
+map([🌽, 🐮, 🐔], cook)
+// => [🍿, 🍔, 🍳]
+
+filter([🍿, 🍔, 🍳], isVegetarian)
+// =>  [🍿, 🍳]
+
+reduce([🍿, 🍳], eat)
+// => 💩
+```
+
 
 ## Usage
+
 ```
 git clone https://github.com/alvaropinot/cooking-emoji
 npm install
