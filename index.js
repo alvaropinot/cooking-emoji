@@ -1,7 +1,8 @@
 const {eat, cook, isVegetarian} = require('./lib');
 
-['🍿', '🍳'].reduce(eat);
-// => 💩
+const _ = {'🚽': ''};  // An empty toilet.
+['🍿', '🍳'].reduce(eat, _['🚽']);
+// => 💩💩
 
 ['🌽', '🐮', '🐔'].map(cook);
 // => [🍿, 🍔, 🍳]

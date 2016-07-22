@@ -3,8 +3,9 @@ const test = require('tape');
 const {eat, cook, isVegetarian, recipeBook} = require('../lib');
 
 test('should be able to eat', t => {
-  const actual = ['🍿', '🍳'].reduce(eat);
-  const expected = '💩';
+  const _ = {'🚽': ''};  // An empty toilet.
+  const actual = ['🍿', '🍳'].reduce(eat, _['🚽']);
+  const expected = '💩💩';
 
   t.equal(actual, expected, 'should produce 💩');
   t.end();
