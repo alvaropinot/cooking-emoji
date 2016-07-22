@@ -7,7 +7,7 @@ const {eat, cook, isVegetarian} = require('./lib');
 // => [🍿, 🍔, 🍳]
 
 ['🍿', '🍔', '🍳'].filter(isVegetarian);
-// =>  [🍿, 🍳]
+// => [🍿, 🍳]
 
 /**
  * Original tweet
@@ -18,7 +18,7 @@ const {eat, cook, isVegetarian} = require('./lib');
  * // => [🍿, 🍔, 🍳]
  *
  * filter([🍿, 🍔, 🍳], isVegetarian)
- * // =>  [🍿, 🍳]
+ * // => [🍿, 🍳]
  *
  * reduce([🍿, 🍳], eat)
  * // => 💩
